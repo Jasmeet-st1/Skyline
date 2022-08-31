@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: sans-serif; */
+}
+.login {
+    min-height: 100vh;
+  }
+  
+  .bg-image {
+    background-image: url("../photos/photo-1469594292607-7bd90f8d3ba4.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .login-heading {
+    font-weight: 300;
+  }
+  
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .btn-google {
+    color: white !important;
+    background-color: #ea4335;
+  }
+  
+  .btn-facebook {
+    color: white !important;
+    background-color: #3b5998;
+  }
+  
