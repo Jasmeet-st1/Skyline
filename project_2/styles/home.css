@@ -167,11 +167,16 @@ body {
 
 #navbar {
     padding: 6px 0;
+    background-color: #961010;
     /* background-color: aquamarine; */
 }
 
 #navbar a {
-    margin: auto;
+    /* margin: auto; */
+    color: white;
+}
+.arrow{
+    vertical-align: text-bottom;
 }
 
 #body-content>div{
@@ -247,7 +252,7 @@ body {
 }
 
 #footer{
-    background-color: rgb(35, 35, 35);
+    background-color: #961010;
     color: white;
     width: 100%;
     padding: 2% 0 0 0;
