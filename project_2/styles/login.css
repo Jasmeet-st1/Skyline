@@ -8,9 +8,9 @@ body {
   }
   
   .bg-image {
-    background-image: url("../photos/photo-1469594292607-7bd90f8d3ba4.jpeg");
+    background-image: url("../photos/Capture.PNG");
     background-size: cover;
-    background-position: center;
+    background-position:center;
   }
   
   .login-heading {
