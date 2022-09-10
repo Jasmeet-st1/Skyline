@@ -19,20 +19,24 @@ searchBtn.addEventListener('click',function(){
 
 let header=document.querySelector("#header");
 let upperHead=document.querySelector("#upper_head");
-console.log(upperHead);
 let headPos = upperHead.getBoundingClientRect().top;
-console.log(headPos);
 
 window.addEventListener("scroll", e => {
     let scrollPos = window.scrollY;
     if (scrollPos > headPos) {
-      upperHead.classList.add('sticky');
-      header.classList.add('headerOffsetMargin');
-      console.log("Sticky");
-      console.log(headPos);
+        upperHead.classList.add('sticky');
+        header.classList.add('headerOffsetMargin');
     } else {
         upperHead.classList.remove('sticky');
         header.classList.remove('headerOffsetMargin');
-        console.log("Not");
+    }
+});
+
+let box=document.querySelectorAll(".outerbox");
+let outercontainer=document.querySelector("#carouselExampleIndicators .carousel-inner");
+console.log(box);
+window.addEventListener('load',function(){
+    for(let i=0;i<box.length;i++){
+        box[i].style.transform="translateY(0px)";
     }
 });
