@@ -23,38 +23,52 @@
 </head>
 
 <body>
-    <div id="header" class="container">
+    <div id="header" class="container-fluid">
 
-        <div id="offerDiv">
-            <div id="offerInner" class="row d-flex justify-content-center">
+        <div id="offerDiv" class="row justify-content-center">
+            <!-- <div id="offerInner" class="row d-flex justify-content-center">
                 <span class="btn col-lg-1 col-md-1">< </span>
                         <p class="col-lg-3 col-md-5 align-self-center" style="margin-top: 0.5%; text-align: center;">Get
                             upto 25% off- Use code "Super September"</p>
-                        <!-- <p class="col-lg-1 align-self-center" style="margin-top: 0.5%; text-align: center;">kjdfng</p> -->
-                        <!-- <p class="col-lg-1 align-self-center" style="margin-top: 0.5%; text-align: center;">kdjfg</p> -->
+                        <p class="col-lg-1 align-self-center" style="margin-top: 0.5%; text-align: center;">kjdfng</p>
+                        <p class="col-lg-1 align-self-center" style="margin-top: 0.5%; text-align: center;">kdjfg</p>
                         <span class="btn col-lg-1 col-md-1">></span>
+            </div> -->
+            <div id="carouselExampleIndicators11" class="carousel slide col-lg-5 col-md-8 col-xs-12 " data-bs-ride="carousel">
+                <div class="carousel-inner" data-interval="2000">
+                    <div class="carousel-item active">
+                        <span style="text-align:center; display: block;">Get upto 25% off- Use code "Super September"</span>
+                    </div>
+                    <div class="carousel-item">
+                        <span style="text-align:center; display: block;">Get flat 15% off on your first Order</span>
+                    </div>
+                </div>
+                <button class="carousel-control-prev text-dark btn-sm" type="button" data-bs-target="#carouselExampleIndicators11" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon text-dark btn-sm"></span>
+                    <!-- <span class=""><</span> -->
+                </button>
+                <button class="carousel-control-next text-dark" type="button" data-bs-target="#carouselExampleIndicators11" data-bs-slide="next">
+                    <span class="carousel-control-next-icon " ></span>
+                  <!-- <span class="">></span> -->
+                </button>
             </div>
-            <span style="float: right; position: absolute; right: 50px; top: 5px;">About Us</span>
+            <!-- <span class="col-1 offset-lg-2">About Us</span> -->
         </div>
 
         <div id="upper_head" class="row align-items-end">
-            <div class="col-lg-1 col-md-1 empty_space"></div>
-            <div class="col-lg-6 col-md-5 brand_name">
+            <div class="col-lg-6 col-md-5 col-sm-4 col-5 offset-lg-1 offset-md-1  brand_name">
                 <img src="./photos/18582038_153726338500663_6517712243640851883_n.png" alt="">
-                <h2><a href="./home_page.html">Arctic Panther</a></h2>
+                <h2 class=""><a href="./home_page.html">Arctic </a></h2>
             </div>
-            <div class="col-lg-3 col-md-4">
-                <div class="search-bar">
+            <div class="col-lg-3 col-md-4 col-5 search-bar">
                     <input type="text" name="" id="search-item" placeholder="Search for 1000+ items">
                     <h4><button class="fa-solid fa-magnifying-glass red red-color" id="search_btn"
                             for="search-item"></button></h4>
-                </div>
             </div>
-            <div class="col-lg-1 col-md-1 login-div red">
+            <div class="col-lg-1 col-md-1 col-1 login-div red">
                 <h4><i class="fa-solid fa-image-portrait red-color"></i></h4>
-                <!-- <h4 class="red-color"><a href="#" class="red-color">Login</a></h4> -->
             </div>
-            <div class="col-lg-1 col-md-1 g-0 red">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-1 red">
                 <h4><a href="#" class="fa-solid fa-cart-shopping red-color"></a></h4>
             </div>
 
@@ -80,15 +94,34 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div> -->
-            <div class="carousel-inner">
+            <div class="carousel-inner " data-interval="1000">
+                <div class="carousel-item">
+                    <img src="./photos/carousel_2.jpeg" class="d-block w-100" alt="...">
+                    <div class="outerbox">
+                        <h1>Trendy Backpack</h1>
+                        <h5>Own Style</h5>
+                        <h2><span>50%</span> Off</h2>
+                        <button class="btn">Shop Now</button>
+                    </div>
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="./photos/carousel_3.jpeg" class="d-block w-100" alt="...">
+                    <div class="outerbox">
+                        <h1>travel luggage</h1>
+                        <h5>own style</h5>
+                        <h2><span>50%</span> off</h2>
+                        <button class="btn">Shop Now</button>
+                    </div>
+                </div>
                 <div class="carousel-item active">
-                    <img src="./photos/travel-bag-slider-1.webp" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./photos/travel-bag-slider-2.webp" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./photos/travel-bag-slider-3.webp" class="d-block w-100" alt="...">
+                    <img src="./photos/carousel_1.jpeg" class="d-block w-100" alt="...">
+                    <div class="outerbox right">
+                        <h1>hiking backpack</h1>
+                        <h5>own style</h5>
+                        <h2><span>50%</span> off</h2>
+                        <button class="btn">Shop Now</button>
+                    </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -102,54 +135,54 @@
         </div>
 
 
-        <div id="main-items" class="container">
+        <div id="main-items" class="container-fluid">
             <h2 class="col-10 align-self-center offset-1">Discover Our Products</h2>
             <div class="row justify-content-center">
-                <div class="col-lg-5 col-md-5 col-sm-10 col-10 image">
+                <div class="col-lg-5 col-md-5 col-sm-10 col-10 image img1">
                     <h5 class="align-bottom">Bagpacks & Case</h5>
                 </div>
-                <div class="col-lg-5 col-md-5 col-sm-6 col-10 bg-danger image">
+                <div class="col-lg-5 col-md-5 col-sm-6 col-10 bg-danger image img2">
                     <h5 class="align-bottom">Duffels & Trolley</h5>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-5 col-md-5 col-sm-6 col-10 bg-danger image">
+                <div class="col-lg-5 col-md-5 col-sm-6 col-10 bg-danger image img3">
                     <h5 class="align-bottom">Tote Bags and Sling Bags</h5>
                 </div>
-                <div class="col-lg-5 col-md-5 col-sm-6 col-10 bg-danger image">
+                <div class="col-lg-5 col-md-5 col-sm-6 col-10 bg-danger image img4">
                     <h5 class="align-bottom">Camera Bags</h5>
                 </div>
             </div>
         </div>
 
 
-        <div id="bestseller" class="container">
+        <div id="bestseller" class="container-fluid">
             <h2 class="offset-1">Our Bestseller</h2>
             <div class="row">
-                <div class="row justify-content-evenly col-11">
-                    <div class="card" style="width: 18rem;padding:0;">
+                <div class="row justify-content-around col-md-11 col-12">
+                    <div class="card col-lg-2 col-md-5 col-6">
                         <img class="card-img-top" src="./photos/logo.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card col-auto" style="width: 18rem;padding:0;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card col-lg-2 col-md-5 col-6">
+                        <img class="card-img-top" src="./photos/logo.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card col-auto" style="width: 18rem;padding:0;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card col-lg-2 col-md-5 col-6">
+                        <img class="card-img-top" src="./photos/logo.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card col-auto" style="width: 18rem;padding:0;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card col-lg-2 col-md-5 col-6">
+                        <img class="card-img-top" src="./photos/logo.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -159,30 +192,30 @@
             </div>
             <h2 class="offset-1">Our Bestseller</h2>
             <div class="row">
-                <div class="row justify-content-evenly col-11">
-                    <div class="card" style="width: 18rem;padding:0;">
+                <div class="row justify-content-around col-md-11 col-12">
+                    <div class="card col-lg-2 col-md-5 col-6">
                         <img class="card-img-top" src="./photos/logo.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card col-auto" style="width: 18rem;padding:0;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card col-lg-2 col-md-5 col-6">
+                        <img class="card-img-top" src="./photos/logo.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card col-auto" style="width: 18rem;padding:0;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card col-lg-2 col-md-5 col-6">
+                        <img class="card-img-top" src="./photos/logo.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card col-auto" style="width: 18rem;padding:0;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card col-lg-2 col-md-5 col-6">
+                        <img class="card-img-top" src="./photos/logo.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -196,7 +229,7 @@
     </div>
           
           <div id="btt"><a href="#header" title="Back to Top">&#8593</a></div>
-          <div id="footer" class="container">
+          <div id="footer" class="container-fluid">
               <div class="row">
                   
                   <div id="ab_us" class="col-lg-3 col-md-6">
