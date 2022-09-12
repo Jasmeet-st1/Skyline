@@ -41,12 +41,12 @@ body {
 #offerDiv p{
     display: inline-block;
 }
-#offerDiv {
-    height: 40px;
-    background-color: #961010;
+#offerDiv span{
+    color: white;
 }
-#offerInner p{
-    width: max-content !important;
+#offerDiv {
+    height: 30px;
+    background-color: #961010;
 }
 
 #upper_head {
@@ -286,13 +286,8 @@ body {
 
 }
 
-#navbar {
-    padding: 6px 0;
-    background-color: #961010;
-    /* background-color: aquamarine; */
-}
-
-.navbar .megamenu{ padding: 1rem; }
+.navbar .megamenu{ padding: 1rem;  box-shadow: 0px 9px 20px 0px;}
+.navbar{padding:0 ; margin: 0 -12px;}
 
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
@@ -314,7 +309,20 @@ body {
 }
 
 #body-content>div{
-    margin:0 0 30px 0;
+    margin-bottom:30px ;
+    vertical-align: top;
+}
+
+.diff_categories, .diff_categories ~ #bestseller{
+    margin-top: 20px;
+}
+
+.diff_categories{
+    padding-left: 30px;
+}
+
+#list_categories li{
+    padding-left: 0;
 }
 
 .carousel-item{
@@ -322,8 +330,6 @@ body {
 }
 
 .outerbox{
-    /* width: 300px; */
-    /* height: 200px; */
     background-color: #cc0000b3;
     border: 10px solid rgba(255, 89, 0, 0.395);
     text-align: center;
@@ -398,10 +404,10 @@ body {
     transform: translateY(-5px);
 }
 
-#bestseller .row{
+.bestseller .row{
     margin: auto;
 }
-#bestseller .col-12{
+.bestseller .col-12{
     padding: 0;
 }
 .card{
@@ -414,6 +420,16 @@ body {
 }
 .card-body{
     padding-left: 0;
+}
+
+#time-div{
+    background-image: url("../photos/time_bg.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin: 0;
+    height: 600px;
 }
 
 .cut{
