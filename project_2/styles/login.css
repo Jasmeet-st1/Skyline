@@ -8,7 +8,7 @@ body {
   }
   
   .bg-image {
-    background-image: url("../photos/Capture.PNG");
+    background-image: url("../photos/Capture.png");
     background-size: cover;
     background-position:center;
   }
@@ -32,4 +32,3 @@ body {
     color: white !important;
     background-color: #3b5998;
   }
-  
