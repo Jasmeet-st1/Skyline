@@ -865,3 +865,20 @@ body {
     padding-top: 4px;
     text-align: center;
 }
+
+@media (max-width:576px){
+    .dt_sc_main_heading{
+        font-size: 35px;
+    }
+}
+
+@media (min-width:577px){
+    .dt_sc_main_heading{
+        font-size: 41px;
+    }
+}
+.list-group-item-about::before{
+    content: "●";
+    color: rgb(19,47,108);
+    margin-right: -9.5rem;
+}
