@@ -29,7 +29,8 @@ body {
 #header{
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 1000000;
+    transition: all 0.8s ease-in-out;
 }
 
 #header a {
@@ -46,9 +47,6 @@ body {
 
 #offerDiv p{
     display: inline-block;
-}
-#offerDiv span{
-    /* color: white; */
 }
 #offerDiv {
     /* height: 30px; */
@@ -95,39 +93,6 @@ body {
     width: fit-content;
     margin-bottom: 0 !important;
 }
-.search-bar {
-    background-color: white;
-    padding: 6px 10px;
-    background-color: inherit;
-    overflow: hidden;
-}
-.search-bar h4{
-    float: right;
-    transform: translateY(9px);
-}
-
-.search-bar input {
-    border: none;
-    background-color: inherit;
-    padding: 0 5px;
-    border-bottom: none;
-    width: 90%;
-    transform: translateY(-100px);
-    border-bottom : 1px solid grey;
-    transition: 0.3s ease-in-out;
-}
-
-.search-bar input:focus {
-    outline: none;
-}
-
-.search-bar button{
-    border: none;
-    background-color: inherit;
-    margin: 0;
-    padding-right: 0;
-    transform: translateY(-2px);
-}
 
 .login-div{
     display: inline-block !important;
@@ -137,12 +102,6 @@ body {
 .login-div h4{
     display: inline-block;
     text-align: center;
-}
-.red:hover .red-color{
-    color: rgb(144, 0, 0) !important;
-}
-.red-color:hover{
-    color: rgb(144, 0, 0) !important;
 }
 .badge{
     background-color: blue;
@@ -168,6 +127,35 @@ body {
     display: block;
     text-align: center;
     margin: auto;
+}
+.search-div {
+    border-bottom: 1px solid gray;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    /* top: 0;
+    left: 0;
+    right: 0; */
+}
+.search-div.invisible{
+    display: none;
+    /* opacity: 0; */
+    /* height: 0; */
+    /* overflow: hidden; */
+    /* padding: 0; */
+    /* margin: 0; */
+    /* transform: scaleY(0); */
+}
+.search-div *{
+    border-radius: 0;
+}
+.fa-xmark{
+    position: absolute;
+    max-width: fit-content !important;
+    scale: 2;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
 }
 
 
@@ -217,6 +205,10 @@ body {
         display: block;
         text-align: center;
         margin: auto;
+    }
+    .navbar .collapse{
+        height: 100vh;
+        overflow-y: scroll;
     }
     #carouselExampleIndicators{
         height: 300px;
@@ -269,6 +261,9 @@ body {
     #upper_head.sticky{
         height: 47px;
     }
+    .search-div button{
+        padding: 6px;
+    }
     .brand_name{
         padding: 0;
     }
@@ -283,6 +278,10 @@ body {
     }
     .navbar{
         padding: 3px !important;
+    }
+    .navbar .collapse{
+        height: 100vh;
+        overflow-y: scroll;
     }
     .login-div{
         margin-right: 0px;
@@ -348,7 +347,7 @@ body {
     .image{
         height: 100px !important;
     }
-    #main-items h5{
+    #main-items h3{
         margin-top: 70px !important;
         font-size: 0.7em;
     }
@@ -864,6 +863,7 @@ body {
 #cr h6{
     padding-top: 4px;
     text-align: center;
+    border: none;
 }
 
 @media (max-width:576px){

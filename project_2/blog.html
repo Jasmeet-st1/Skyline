@@ -23,13 +23,21 @@
 <body>
     <div id="header" class="container-fluid">
 
+        <div class="search-div row invisible justify-content-center py-2">
+            <input type="text" class="col-8" placeholder="Search for 1000+ items">
+            <button class="btn btn-secondary col-1" type="button">
+                <i class="fa fa-search"></i>
+            </button>
+            <span class="fa-solid fa-xmark"></span>
+
+        </div>
+
         <div id="offerDiv" class="row justify-content-center">
             <div id="carouselExampleIndicators11" class="carousel slide col-lg-5 col-md-8 col-xs-12 "
                 data-bs-ride="carousel">
                 <div class="carousel-inner" data-interval="2000">
                     <div class="carousel-item active">
-                        <span style="text-align:center; display: block;">Get upto 25% off- Use code "Super
-                            September"</span>
+                        <span style="text-align:center; display: block;">Get upto 25% off- Use code "Ashmuth"</span>
                     </div>
                     <div class="carousel-item">
                         <span style="text-align:center; display: block;">Get flat 15% off on your first Order</span>
@@ -51,20 +59,20 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark row" style="background-color:rgb(19,47,108);">
             <div class="container-fluid row justify-content-center">
-                <h4 class="col-lg-2 col-md-3 col-4 brand-laptop"><a class="navbar-brand" href="#">Brand</a></h4>
+                <h4 class="col-lg-2 col-md-3 col-4 brand-laptop"><a class="navbar-brand" href="./home_page.html">Brand</a></h4>
                 <button class="navbar-toggler col-1" style="color: rgb(19,47,108);"type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
                     <span class="navbar-toggler-icon" style="color:white;"></span>
                 </button>
-                <h4 class="col-lg-2  col-8 brand-tablet"><a class="navbar-brand" href="#">Brand</a></h4>
-                <h4 class="col-lg-1 col-md-1 col-1 buttons-icons-tablet"><button class="fa-solid fa-magnifying-glass red red-color" id="search_btn" for="search-item"></button></h4>
+                <h4 class="col-lg-2  col-8 brand-tablet"><a class="navbar-brand" href="./home_page.html">Brand</a></h4>
+                <h4 class="col-lg-1 col-md-1 col-1 buttons-icons-tablet"><button class="fa-solid fa-magnifying-glass red red-color search_btn" for="search-item"></button></h4>
                 
                 <h4 class="col-lg-1 col-md-1 col-1 buttons-icons-tablet"><a href="./login.html" class="fa-solid fa-image-portrait red-color"></a></h4>
                 
-                <h4 class="col-lg-1 col-md-1 col-1 buttons-icons-tablet"><a href="#" class="fa-solid fa-cart-shopping red-color"></a></h4>
+                <h4 class="col-lg-1 col-md-1 col-1 buttons-icons-tablet"><a href="./cart_page.html" class="fa-solid fa-cart-shopping red-color"></a></h4>
                 
                 <div class="collapse navbar-collapse justify-content-center col-lg-7"  id="main_nav">
                     <ul class="navbar-nav">
-                        <li class="nav-item active px-4"> <a class="nav-link" href="#" style="color:white;" >Home </a> </li>
+                        <li class="nav-item active px-4"> <a class="nav-link" href="./home_page.html" style="color:white;" >Home </a> </li>
                         <!-- <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
                             <li class="nav-item"><a class="nav-link" href="#"> Services </a></li> -->
                         <li class="nav-item dropdown has-megamenu">
@@ -127,7 +135,7 @@
                                     </div>    
                                     <div class="col-lg-3 col-6">
                                         <div class="col-megamenu">
-                                            <img class="py-5 img-fluid" src="../project_2/photos/menu-1.webp" style="width:100%;">
+                                            <img class="img-fluid" src="./photos/product_list/prod6.jpg" style="width:100%;">
                                         </div>  <!-- col-megamenu.// -->
                                     </div><!-- end col-3 -->
                                 </div>
@@ -193,7 +201,7 @@
                                     </div>    
                                     <div class="col-lg-3 col-6">
                                         <div class="col-megamenu">
-                                            <img class="img-fluid" src="../project_2/photos/pdt16.webp" style="width:100%;">
+                                            <img class="img-fluid" src="./photos/product_list/prod7.jpg" style="width:100%;">
                                         </div>  <!-- col-megamenu.// -->
                                     </div><!-- end col-3 -->
                                 </div>
@@ -279,7 +287,7 @@
                                             <h5 class="title text-uppercase" style="color: rgb(19,47,108);">Suitcase</h5>
                                             <br>
                                             <ul class="list-unstyled">
-                                                <li><a href="#">Skybags/a></li>
+                                                <li><a href="#">Skybags</a></li>
                                                 <li class="dropdown-divider"></li>
                                                 <li><a href="#">Swiss Military</a></li>
                                                 <li class="dropdown-divider"></li>
@@ -346,21 +354,19 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link  dropdown-toggle px-4" style="color:white;" href="#" data-bs-toggle="dropdown">Pages</a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">About</a></li>
+                              <li><a class="dropdown-item" href="./about_us.html" style="display:block;width: 100%">About</a></li>
                               <li class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Contact</a></li>
-                              <li class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Blog</a></li>
+                              <li><a class="dropdown-item" href="./blog.html" style="display:block; width: 100%;">Blog</a></li>
                               <!-- <li class="dropdown-divider"></li> -->
                             </ul>
                         </li>
                     </ul>
                 </div> <!-- navbar-collapse.// -->
-                <h4 class="col-lg-1 col-md-1 col-1 buttons-icons-laptop"><button class="fa-solid fa-magnifying-glass red red-color" id="search_btn" for="search-item"></button></h4>
+                <h4 class="col-lg-1 col-md-1 col-1 buttons-icons-laptop"><button class="fa-solid fa-magnifying-glass red red-color search_btn" for="search-item"></button></h4>
                 
                 <h4 class="col-lg-1 col-md-1 col-1 buttons-icons-laptop"><a href="./login.html" class="fa-solid fa-image-portrait red-color"></a></h4>
                 
-                <h4 class="col-lg-1 col-md-1 col-1 buttons-icons-laptop"><a href="#" class="fa-solid fa-cart-shopping red-color"></a></h4>
+                <h4 class="col-lg-1 col-md-1 col-1 buttons-icons-laptop"><a href="./cart_page.html" class="fa-solid fa-cart-shopping red-color"></a></h4>
                 
             </div> <!-- container-fluid.// -->
         </nav>
@@ -368,7 +374,7 @@
 
 
     <div id="body-content" class="container-fluid row">
-        <div class="diff_categories col-lg-2">
+        <div class="diff_categories col-lg-2 d-none d-lg-inline-block">
             <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum delectus necessitatibus nobis sapiente neque,
             illum ipsum quaerat voluptate maiores, ducimus dolorem sed culpa similique inventore. -->
             <div class="slidebar_title">
@@ -445,7 +451,7 @@
                         <img class="card-img-top" src="./photos/blog-9_600x.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Adventure with honest</h5>
-                            <p class="card-text">It’s July, which means that the monsoon season is at its finest, and no matter where you are, the rain will always lift your spirits up. If this te...</p>
+                            <p class="card-text">It's July, which means that the monsoon season is at its finest, and no matter where you are, the rain will always lift your spirits up. If this te...</p>
                             <button class="btn btn-dark">Read More</button>
                         </div>
                     </div>

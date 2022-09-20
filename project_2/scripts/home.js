@@ -1,28 +1,68 @@
-let searchBtn=document.querySelector("#search_btn");
-let searchInput=document.querySelector("#search-item");
+let searchBtn=document.querySelectorAll(".search_btn");
+let searchDiv=document.querySelector(".search-div");
+let searchInput=document.querySelector(".search-div input");
+let searchButton=document.querySelector(".search-div button");
 
-searchBtn.addEventListener('click',function(){
+let cutBtn=document.querySelector(".fa-xmark");
+console.log(searchBtn);
+console.log(searchBtn.length);
+for(let d=0;d<searchBtn.length;d++){
+    searchBtn[d].addEventListener('click',function(){
+        searchDiv.classList.remove("invisible");
+    });
+}
+cutBtn.addEventListener('click',function(){
+    searchDiv.classList.add("invisible");
 
-    var x=searchInput.style.transform=="translateY(8px)";
-    console.log(x);
-    if(searchInput.value=="" && !x){
-        searchInput.style.transform="translateY(8px)";
-    }
-    else if(x && searchInput.value!=""){
+})
+searchButton.addEventListener('click',function(){
+    
+    if(searchInput.value!=""){
+        searchInput.value="";
         location.href="./single_type_product_list.html";
     }
-    else if(x){
-        searchInput.style.transition='0.3s ease-in-out';
-        searchInput.style.transform="translateY(-100px)";
-    }
-});
+})
 
 let topBtn=document.querySelector("#btt");
 topBtn.addEventListener('click',function(){
-    // let scrollPos = window.scrollY;
     document.documentElement.scrollTop = 0;
 
 });
+
+let upperTitle=document.querySelectorAll(".title.text-uppercase");
+let lowerTitle=document.querySelectorAll(".list-unstyled a");
+console.log(lowerTitle);
+for(let i=0;i<upperTitle.length;i++){
+    upperTitle[i].style.cursor="pointer";
+    upperTitle[i].addEventListener('click',function(){
+        location.href='./single_type_product_list.html';
+    });
+}
+for(let i=0;i<lowerTitle.length;i++){
+    lowerTitle[i].addEventListener('click',function(){
+        location.href='./single_product_page.html';
+        console.log("hello");
+    });
+}
+
+let homeImg=document.querySelectorAll("#main-items .image");
+for(let i=0;i<homeImg.length;i++){
+    homeImg[i].style.cursor="pointer";
+    homeImg[i].addEventListener('click',function(){
+        location.href='./single_type_product_list.html';
+        console.log("hello");
+    });
+}
+
+
+let shopBtn=document.querySelectorAll(".card-body .btn");
+for(let i=0;i<shopBtn.length;i++){
+    shopBtn[i].addEventListener('click',function(){
+        location.href='./single_product_page.html';
+        console.log("hello");
+    });
+}
+
 
 let box=document.querySelectorAll(".outerbox");
 let outercontainer=document.querySelector("#carouselExampleIndicators .carousel-inner");
