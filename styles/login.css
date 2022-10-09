@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: sans-serif; */
+}
+.login {
+  min-height: 100vh;
+}
+
+.brand-name{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+  
+.bg-image {
+  background-image: url("../photos/Capture.png");
+  background-size: cover;
+  background-position:center;
+}
+
+.login-heading {
+  font-weight: 300;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+
+.btn-google {
+  color: white !important;
+  background-color: #ea4335;
+}
+
+.btn-facebook {
+  color: white !important;
+  background-color: #3b5998;
+}

@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="./styles/home.css">
+</head>
+
+<body>
+    <div id="header" class="container-fluid">
+
+        <div class="search-div row invisible justify-content-center py-2">
+            <input type="text" class="col-8" placeholder="Search for 1000+ items">
+            <button class="btn btn-secondary col-1" type="button">
+                <i class="fa fa-search"></i>
+            </button>
+            <span class="fa-solid fa-xmark"></span>
+
+        </div>
+
+        <div id="offerDiv" class="row justify-content-center">
+            <div id="carouselExampleIndicators11" class="carousel slide col-lg-5 col-md-8 col-xs-12 "
+                data-bs-ride="carousel">
+                <div class="carousel-inner" data-interval="2000">
+                    <div class="carousel-item active">
+                        <span style="text-align:center; display: block;">Get upto 25% off- Use code "Ashmitha"</span>
+                    </div>
+                    <div class="carousel-item">
+                        <span style="text-align:center; display: block;">Get flat 15% off on your first Order</span>
+                    </div>
+                </div>
+                <button class="carousel-control-prev text-dark btn-sm" type="button"
+                    data-bs-target="#carouselExampleIndicators11" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon text-dark btn-sm"></span>
+                    <!-- <span class=""><</span> -->
+                </button>
+                <button class="carousel-control-next text-dark" type="button"
+                    data-bs-target="#carouselExampleIndicators11" data-bs-slide="next">
+                    <span class="carousel-control-next-icon "></span>
+                    <!-- <span class="">></span> -->
+                </button>
+            </div>
+            <!-- <span class="col-1 offset-lg-2">About Us</span> -->
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark row" style="background-color:rgb(19,47,108);">
+            <div class="container-fluid row justify-content-center">
+                <h4 class="col-lg-2 col-md-3 col-4 brand-laptop"><a class="navbar-brand" href="./home_page.html">Skyline</a></h4>
+                <button class="navbar-toggler col-1" style="color: rgb(19,47,108);"type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+                    <span class="navbar-toggler-icon" style="color:white;"></span>
+                </button>
+                <h4 class="col-lg-2  col-8 brand-tablet"><a class="navbar-brand" href="./home_page.html">Skyline</a></h4>
+                <h4 class="col-lg-1 col-md-1 col-1 buttons-icons-tablet"><button class="fa-solid fa-magnifying-glass red red-color search_btn" for="search-item"></button></h4>
+                
+                <h4 class="col-lg-1 col-md-1 col-1 buttons-icons-tablet"><a href="./login.html" class="fa-solid fa-image-portrait red-color"></a></h4>
+                
+                <h4 class="col-lg-1 col-md-1 col-1 buttons-icons-tablet"><a href="./cart_page.html" class="fa-solid fa-cart-shopping red-color"></a></h4>
+                
+                <div class="collapse navbar-collapse justify-content-center col-lg-7"  id="main_nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active px-4"> <a class="nav-link" href="./home_page.html" style="color:white;" >Home </a> </li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"> Services </a></li> -->
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle px-4" style="color:white;" href="#" data-bs-toggle="dropdown"> Collection  </a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="row g-3">
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h5 class="title text-uppercase" style="color: rgb(19,47,108);">Lock Type</h5>
+                                            <br>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Safari</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Tommy</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Wildcraf</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Pronto</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Hilfiger</a></li>
+                                                <li class="dropdown-divider"></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h5 class="title text-uppercase" style="color: rgb(19,47,108);">Hand Bags</h5>
+                                            <br>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Typify</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Marie</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Fostelo</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Generic</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Vezela</a></li>
+                                                <li class="dropdown-divider"></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h5 class="title text-uppercase" style="color: rgb(19,47,108);">Purse</h5>
+                                            <br>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Marie</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Flora</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Garcetop</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Fabtec</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Typify</a></li>
+                                                <li class="dropdown-divider"></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div>    
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <img class="img-fluid" src="./photos/product_list/prod6.jpg" style="width:100%;">
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                </div>
+                            </div> <!-- dropdown-mega-menu.// -->
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle px-4" style="color:white;" href="#" data-bs-toggle="dropdown"> Shop  </a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="row g-3">
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h5 class="title text-uppercase" style="color: rgb(19,47,108);">Suitcase</h5>
+                                            <br>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Skybags</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Trunki</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Generic</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Timus</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Samsonite</a></li>
+                                                <li class="dropdown-divider"></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h5 class="title text-uppercase" style="color: rgb(19,47,108);">School Bags</h5>
+                                            <br>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Daikon</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Gear</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">DZert</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Vintage</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Skybags</a></li>
+                                                <li class="dropdown-divider"></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h5 class="title text-uppercase" style="color: rgb(19,47,108);">Waist Pouch</h5>
+                                            <br>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Skyline</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Swiss Military</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Tantra</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Young</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Saco</a></li>
+                                                <li class="dropdown-divider"></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div>    
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <img class="img-fluid" src="./photos/product_list/prod7.jpg" style="width:100%;">
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                </div>
+                            </div> <!-- dropdown-mega-menu.// -->
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle px-4" style="color:white;" href="#" data-bs-toggle="dropdown"> Bagpack  </a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="row g-3">
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h5 class="title text-uppercase" style="color: rgb(19,47,108);">Laptop Bag</h5>
+                                            <br>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Lenovo</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Asus</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Dell</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Acer</a></li>
+                                                <li class="dropdown-divider"></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h5 class="title text-uppercase" style="color: rgb(19,47,108);">office Bags</h5>
+                                            <br>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Asus</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Killer</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">hamelin</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Suntop</a></li>
+                                                <li class="dropdown-divider"></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h5 class="title text-uppercase" style="color: rgb(19,47,108);">Rope Bags</h5>
+                                            <br>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Gear</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">DZert</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Roadeez</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Magideal</a></li>
+                                                <li class="dropdown-divider"></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div>    
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h5 class="title text-uppercase" style="color: rgb(19,47,108);">School Bags</h5>
+                                            <br>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Sarah</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Ranger</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Apnav</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Bag-Ace</a></li>
+                                                <li class="dropdown-divider"></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                </div>
+                            </div> <!-- dropdown-mega-menu.// -->
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle px-4" style="color:white;" href="#" data-bs-toggle="dropdown"> Travel Bags  </a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="row g-3">
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h5 class="title text-uppercase" style="color: rgb(19,47,108);">Suitcase</h5>
+                                            <br>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Skybags</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Swiss Military</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">VIP</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Samsonite</a></li>
+                                                <li class="dropdown-divider"></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h5 class="title text-uppercase" style="color: rgb(19,47,108);">Bagpack</h5>
+                                            <br>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Skyline</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Wildcraf</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Generic</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Bleu</a></li>
+                                                <li class="dropdown-divider"></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h5 class="title text-uppercase" style="color: rgb(19,47,108);">LUggage Bags</h5>
+                                            <br>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Suntop</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Wildcraf</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">N Choice</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Aeoss</a></li>
+                                                <li class="dropdown-divider"></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div>    
+                                    <div class="col-lg-3 col-6">
+                                        <div class="col-megamenu">
+                                            <h5 class="title text-uppercase" style="color: rgb(19,47,108);">Baby Bags</h5>
+                                            <br>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">T-Bags</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Little's</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Offspring</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a href="#">Rachna</a></li>
+                                                <li class="dropdown-divider"></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                </div>
+                            </div> <!-- dropdown-mega-menu.// -->
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle px-4" style="color:white;" href="#" data-bs-toggle="dropdown">Pages</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./about_us.html" style="display:block;width: 100%">About</a></li>
+                              <li class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="./blog.html" style="display:block; width: 100%;">Blog</a></li>
+                              <!-- <li class="dropdown-divider"></li> -->
+                            </ul>
+                        </li>
+                    </ul>
+                </div> <!-- navbar-collapse.// -->
+                <h4 class="col-lg-1 col-md-1 col-1 buttons-icons-laptop"><button class="fa-solid fa-magnifying-glass red red-color search_btn" for="search-item"></button></h4>
+                
+                <h4 class="col-lg-1 col-md-1 col-1 buttons-icons-laptop"><a href="./login.html" class="fa-solid fa-image-portrait red-color"></a></h4>
+                
+                <h4 class="col-lg-1 col-md-1 col-1 buttons-icons-laptop"><a href="./cart_page.html" class="fa-solid fa-cart-shopping red-color"></a></h4>
+                
+            </div> <!-- container-fluid.// -->
+        </nav>
+    </div>
+
+
+    <div id="body-content" class="container-fluid row" style="margin: 0;padding:0;">
+        <div class="diff_categories col-lg-2 d-none d-lg-inline-block">
+            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum delectus necessitatibus nobis sapiente neque,
+            illum ipsum quaerat voluptate maiores, ducimus dolorem sed culpa similique inventore. -->
+            <div class="slidebar_title">
+                <div class="heading pt-2">
+                    <h5>Recent Article</h4>
+                </div>
+            </div>
+            <div class="list-group list-group-flush news-items">
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                  <div class="d-flex w-100 justify-content-between row">
+                    <img class="img-fluid col-12" src="./photos/blog-11_180x.jpg">
+                    <h6 class="mb-1 col-12">Collection suitcase and backpack</h6>
+                  </div>
+                  <small class="text-muted">August 13, 2022</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between row">
+                    <img class="img-fluid col-12" src="./photos/blog-12_180x.jpg">
+                    <h6 class="mb-1 clo-12">Bags are ready to export</h6>
+                  </div>
+                  <small class="text-muted"> November 1, 2021</small>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between row">
+                    <img class="img-fluid col-12" src="./photos/blog-10_180x.jpg">
+                    <h6 class="mb-1 col-12">Waiting for train</h6>
+                  </div>
+                  <small class="text-muted">October 8, 2020</small>
+                </a>
+            </div>
+            <div class="slidebar_title mt-5">
+                <div class="heading pt-2">
+                    <h5>Categories</h4>
+                </div>
+            </div>
+            <div id="list_categories" class="list-group list-group-flush">
+                <li class="list-group-item">Bagpack</li>
+                <li class="list-group-item">Bags</li>
+                <li class="list-group-item">Suitcase</li>
+                <li class="list-group-item">Trekking</li>
+                <!-- <li class="list-group-item">Vestibulum at eros</li> -->
+            </div>
+        </div>
+        <div id="" class="bestseller blog-body container col-lg-10">
+            <div class="row justify-content-between">
+                <h1 class="col-12 py-5" style="text-align: center;background-color: whitesmoke;">Blog</h1>
+                <div class="row col-md-12 col-11">
+                    <div class="card col-lg-6 col-md-6 col-12 px-4">
+                        <img class="card-img-top" src="./photos/blog-10_600x.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Waiting for train</h5>
+                            <p class="card-text">Some things never go out of style and backpacks are among them. With remote working becoming the new normal, it is only natural to opt for backpacks that are perfectly utilitarian and tre...</p>
+                            <button class="btn btn-dark">Read More</button>
+                        </div>
+                    </div>
+                    <div class="card col-lg-6 col-md-6 col-12 px-4">
+                        <img class="card-img-top" src="./photos/blog-12_600x.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Bags are ready to export</h5>
+                            <p class="card-text">Most people love to shop, some know how to. Shopping is an art. Especially when there are so many options to choose from.  They say, “Behind every successful woman is a bag she loves” and we couldn...
+                            </p>
+                            <button class="btn btn-dark">Read More</button>
+                        </div>
+                    </div>
+                    <div class="card col-lg-6 col-md-6 col-12 px-4">
+                        <img class="card-img-top" src="./photos/blog-11_600x.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Collection suitcase and backpack</h5>
+                            <p class="card-text">Pris sed aliquam nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed...</p>
+                            <button class="btn btn-dark">Read More</button>
+                        </div>
+                    </div>
+                    <div class="card col-lg-6 col-md-6 col-12 px-4">
+                        <img class="card-img-top" src="./photos/blog-9_600x.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Adventure with honest</h5>
+                            <p class="card-text">It's July, which means that the monsoon season is at its finest, and no matter where you are, the rain will always lift your spirits up. If this te...</p>
+                            <button class="btn btn-dark">Read More</button>
+                        </div>
+                    </div>
+                    <div class="card col-lg-6 col-md-6 col-12 px-4">
+                        <img class="card-img-top" src="./photos/blog-8_600x.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Comfortable backpack for vacation</h5>
+                            <p class="card-text">There’s nothing quite like the feeling that comes when travelling during the monsoon season. We can easily picture the scene; a piping hot cup of c...</p>
+                            <button class="btn btn-dark">Read More</button>
+                        </div>
+                    </div>
+                    <div class="card col-lg-6 col-md-6 col-12 px-4">
+                        <img class="card-img-top" src="./photos/blog-7_600x.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Going for tour with family</h5>
+                            <p class="card-text">Travelling the world, exploring new countries and cities, trying sumptuous cuisines, and strolling on uncharted pathways are what wanderlust dreams are made of...</p>
+                            <button class="btn btn-dark">Read More</button>
+                        </div>
+                    </div>
+                    <!-- <div class="card col-lg-3 col-md-4 col-6">
+                        <img class="card-img-top" src="./photos/logo.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-6">
+                        <img class="card-img-top" src="./photos/logo.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-6">
+                        <img class="card-img-top" src="./photos/logo.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-6">
+                        <img class="card-img-top" src="./photos/logo.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div id="btt"><a href="#header" title="Back to Top">&#8593</a></div>
+    <div id="footer" class="container-fluid">
+        <div class="row">
+
+            <div id="ab_us" class="col-lg-3 col-md-6">
+                <h4>Skyline</h4>
+                <p>Skyline houses everything you can possibly imagine, from trecking
+                    backpacks to Day to Day use bags like laptop backpack. 
+                  </p>
+              </div>
+              <div id="products" class="col-lg-3 col-md-6">
+                  <h4>Our Products</h4>
+                  <p>Backpacks</p>
+                  <p>Duffels</p>
+                  <p>Trolley Bags</p>
+                  <p>Trecking Bags</p>
+                  <p>Laptop and Gadget Bags</p>
+                  
+              </div>
+            <div id="contact_us" class="col-lg-3 col-md-6">
+                <h4 id="contact">Contact Us</h4>
+                <label for="contact-email">Leave your E-mail address here and we'll reach to you</p>
+                    <div id="email-form">
+                        <input type="text" name="" id="contact-email" placeholder="Email">
+                        <button class="fa-solid fa-paper-plane"></button>
+                    </div>
+                    <div id="follow">
+                        <h4>Follow Us</h4>
+                        <a class="icon_l" href="https://www.instagram.com/jasmeet_s_taneja/" target="_blank"><i
+                                class="fa-brands fa-instagram fa-2xl"></i></a>
+                        <a class="icon_l" href="https://www.facebook.com/profile.php?id=100029370354350"
+                            target="_blank"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+                        <a class="icon_l"><i class="fa-brands fa-square-google-plus fa-2xl"></i></a>
+                        <a class="icon_l" href="https://www.linkedin.com/in/jasmeet-singh-85860a220/" target="_blank"><i
+                                class="fa-brands fa-linkedin fa-2xl"></i></a>
+                        <a class="icon_l"><i class="fa-brands fa-square-twitter fa-2xl"></i></a>
+                        <a class="icon_l" href="https://github.com/Jasmeet-st1" target="_blank"><i
+                                class="fa-brands fa-square-github fa-2xl"></i></a><br>
+                    </div>
+            </div>
+            <div id="feedback" class="col-lg-3 col-md-6">
+                <h4>Wan'na give Suggestions</h4>
+                <p>Please fill this <a href="./feedback_form.html">Feedback Form</a> to contribute to this website
+                    improvement and to get your problem solved.</p>
+            </div>
+        </div>
+        <div class="row">
+
+            <div id="cr" class="col-xl-12">
+                <h6><i class="fa-solid fa-copyright">&nbsp;</i>Copyright by Skyline</h6>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./scripts/home.js"></script>
+
+</html>
